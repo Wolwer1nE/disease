@@ -9,10 +9,11 @@ recovery_rate = 0.01;
 death_rate = 0.01;
 isolation_rate = 0;
 transmission_radius = 100;
-% 4 координаты - положение и место, куда надо пойти
-%  од состо€ни€:
-% 0 - здоров, 1 - болеет, 2 - выздоровел, 3 - умер
-%  од поведени€: 0 - не соблюдает меры, 1 - соблюдает
+% Each citizen has 6 params:
+% 4 coords - current location (x,y) and destination (x,y)
+% Status code:
+% 0 - healthy, 1 - ill, 2 - recovered (immume), 3 - dead
+% Behaviuor code: 0 - acts as usual, 1 - on self-isolation
 
 citizens = zeros(total_citizens, 6);
 citizens(:,1:4) = randi([0, 1000], [total_citizens, 4]);
