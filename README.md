@@ -1,4 +1,4 @@
-##  Run demo.m to perform simulation.
+##  Run demoui.m to perform simulation.
 
 Use these variables to control simulation. 
 1. total_citizens
